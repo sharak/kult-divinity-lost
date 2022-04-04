@@ -2,7 +2,7 @@
   "name": "kult-divinity-lost",
   "title": "Kult Divinity Lost - 4th Edition",
   "description": "An implementation of the Kult 4th Edition ruleset.",
-  "version": 1.2,
+  "version": 1.2.1,
   "minimumCoreVersion": "9.255",
   "compatibleCoreVersion": "9.255",
   "templateVersion": 2,
@@ -31,8 +31,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "harm",
   "url": "https://github.com/astarte-horns/kult-divinity-lost/",
-  "manifest": "https://github.com/astarte-horns/kult-divinity-lost/blob/main/system.json",
-  "download": "https://github.com/astarte-horns/kult-divinity-lost/archive/refs/heads/main.zip",
+  "manifest": "https://raw.githubusercontent.com/astarte-horns/kult-divinity-lost/1.2/system.json",
+  "download": "https://github.com/astarte-horns/kult-divinity-lost/archive/refs/heads/1.2.zip",
   "license": "LICENSE",
   "media": [
     {
