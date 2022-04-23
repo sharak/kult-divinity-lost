@@ -48,12 +48,13 @@ export default class kult4eActor extends Actor {
     return modifier;
   }  
 
-  displayRollResult({roll, moveName, resultText, moveResultText }) {
+  displayRollResult({roll, moveName, resultText, moveResultText, optionsText }) {
     ChatMessage.create({ 
       content: `
         <div class='move-name'>${moveName}</div>
         <div class='move-name'>${resultText}!</div>
         <div class='move-result'>${moveResultText}</div>
+        <div class='move-options'>${optionsText}</div>
         <div class='result-roll'>
           <div class='tooltip'>
             ${roll.total}
@@ -81,6 +82,7 @@ export default class kult4eActor extends Actor {
     } else {
       const attr = moveData.attributemod == "ask" ? await attributeAsk() : moveData.attributemod;
       const successtext = moveData.completesuccess;
+      const optionstext = moveData.options;
       const failuretext = moveData.failure;
       const partialsuccess = moveData.partialsuccess;
       const specialflag = moveData.specialflag;
@@ -156,13 +158,13 @@ export default class kult4eActor extends Actor {
       }
 
       if (r.total >= 15) {
-        this.displayRollResult({ roll: r, moveName, resultText:  game.i18n.localize("kult4e.Success"), moveResultText: successtext });
+        this.displayRollResult({ roll: r, moveName, resultText:  game.i18n.localize("kult4e.Success"), moveResultText: successtext, optionsText: optionstext });
       }
       else if (r.total < 10) {
-        this.displayRollResult({ roll: r, moveName, resultText: game.i18n.localize("kult4e.Failure"), moveResultText: failuretext });
+        this.displayRollResult({ roll: r, moveName, resultText: game.i18n.localize("kult4e.Failure"), moveResultText: failuretext, optionsText: optionstext });
       }
       else {
-        this.displayRollResult({ roll: r, moveName, resultText: game.i18n.localize("kult4e.PartialSuccess"), moveResultText: partialsuccess });
+        this.displayRollResult({ roll: r, moveName, resultText: game.i18n.localize("kult4e.PartialSuccess"), moveResultText: partialsuccess, optionsText: optionstext });
       }
     }   
   }
