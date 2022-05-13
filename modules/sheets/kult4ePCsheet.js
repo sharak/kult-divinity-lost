@@ -29,30 +29,20 @@ export default class kult4ePCsheet extends ActorSheet{
     super.activateListeners(html)
 
     // Drag event handler
-const dragHandler = ev => this._onDragStart(ev)
+    const dragHandler = ev => this._onDragStart(ev)
 
-// Helper function to make things draggable
-const makeDraggable = function (index, element) {
-  // Add draggable attribute and dragstart listener.
-  element.setAttribute('draggable', true)
-  element.addEventListener('dragstart', dragHandler, false)
-}
-  // Draggable items, including armor
-  html.find('.item-draggable').each(makeDraggable)
+    // Helper function to make things draggable
+    const makeDraggable = function (index, element) {
+      // Add draggable attribute and dragstart listener.
+      element.setAttribute('draggable', true)
+      element.addEventListener('dragstart', dragHandler, false)
+    }
+    // Draggable items, including armor
+    html.find('.item-draggable').each(makeDraggable)
 
-  html.find('.item-delete').click(ev => {
-  console.log(ev.currentTarget);
-  let li = $(ev.currentTarget).parents(".item-name"),
-  itemId = li.attr("data-item-id");
-  console.log(li);
-  console.log(`itemID =0 ${itemId}`);
-  this.actor.deleteEmbeddedDocuments("Item", [itemId]);
-
-});
-    
     html.find('.item-delete').click(ev => {
       let li = $(ev.currentTarget).parents(".item-name"),
-      itemId = li.attr("data-item-id");
+          itemId = li.attr("data-item-id");
       kultLogger("Delete Item => ", { currentTarget: ev.currentTarget, li, itemId })
       this.actor.deleteEmbeddedDocuments("Item", [itemId]);
     });
@@ -87,7 +77,7 @@ const makeDraggable = function (index, element) {
     html.find('.stability-check').click(ev =>{
       stability();
     });
-    
+
     html.find('.token-add').click(ev =>{
       const li = $(ev.currentTarget).parents(".item-name");
       const item = this.actor.getOwnedItem(li.data("itemId"));
@@ -139,7 +129,7 @@ const makeDraggable = function (index, element) {
       let newtokens = Number(item.data.data.tokens) -1;
       item.update({'data.tokens': newtokens});
     })
-    
+
     html.find('.token-add').click(ev =>{
       const li = $(ev.currentTarget).parents(".item-name");
       const item = this.actor.getEmbeddedDocument("Item", li.data("itemId"));
