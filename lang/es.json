@@ -1,4 +1,4 @@
-  {
+{
   "kult4e.Ask": "Preguntar",
   "kult4e.AskAttribute": "¿Qué atributo quieres usar?",
   "kult4e.Success": "Éxito completo",
@@ -79,7 +79,7 @@
   "kult4e.HasHold": "¿Tiene Puntos?",
   "kult4e.Counter": "Contador",
   "kult4e.Effect": "Efecto",
-  "kult4e.Options": "Opciones",							  
+  "kult4e.Options": "Opciones",
   "kult4e.Results": "Resultados",
   "kult4e.Description": "Descripción",
   "kult4e.Target": "Personaje",
@@ -101,7 +101,6 @@
   "kult4e.HealedStability": "ha recuperado Estabilidad",
   "kult4e.PCIsComposed": "El personaje ya está Tranquilo",
   "kult4e.PassiveAbility": "Este rasgo es pasivo, no necesita tirada",
-
   "kult4e.Settings.Paused": "Juego en pausa",
   "kult4e.Settings.PauseIcon": "Icono de Pausa",
   "kult4e.Settings.PauseIconHint": "Selecciona una imagen para reemplazar el icono de pausa.",
