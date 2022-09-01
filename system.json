@@ -2,7 +2,7 @@
   "name": "kult-divinity-lost",
   "title": "Kult Divinity Lost - 4th Edition",
   "description": "An implementation of the Kult 4th Edition ruleset.",
-  "version": "1.4.0.0",
+  "version": "1.4.1.0",
   "minimumCoreVersion": "9.255",
   "compatibleCoreVersion": "9.269",
   "templateVersion": 2,
