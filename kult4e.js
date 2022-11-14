@@ -39,17 +39,16 @@ Hooks.once("init", function() {
   Items.unregisterSheet("core", ItemSheet);
   //Actors.unregisterSheet("core", ActorSheet);
   Items.registerSheet("kult4e", kult4eitemsheet, {makeDefault: true});
-  Actors.registerSheet("kult4e", kult4ePCsheet, {makeDefault: true});
-  Actors.registerSheet("kult4e", kult4eNPCsheet, {makeDefault: false});
+  Actors.registerSheet("kult4e", kult4ePCsheet, {types: ["pc"], makeDefault: true});
+  Actors.registerSheet("kult4e", kult4eNPCsheet, {types: ["npc"], makeDefault: true});
 
-	
   preloadHandlebarTemplates();
 });
 
 Hooks.once("ready", () => {
   // Listen for dice icon click
   const diceIconSelector = '#chat-controls i.fas.fa-dice-d20';
-  $(document).on('click', diceIconSelector, () => { 
+  $(document).on('click', diceIconSelector, () => {
       console.log(`Dice Icon Works`);
   });
 });
@@ -67,11 +66,11 @@ Hooks.on('createActor', async (document, createData, options, userId) => {
             await createData.createEmbeddedDocuments('Item', [finalItem]);
         }
     }
-  
+
   });
 
   Hooks.on('hotbarDrop', async (hotbar, data, slot) => {
-  
+
     console.log(data.data.data);
     if(data.data.data.type === "passive"){
       ui.notifications.info(game.i18n.localize("kult4e.PassiveAbility"))
@@ -93,6 +92,6 @@ Hooks.on('createActor', async (document, createData, options, userId) => {
       img: macroData.img,
       command: macroData.command})
       await game.user.assignHotbarMacro(macro, slot)
-  
-  
+
+
     })
