@@ -39,6 +39,8 @@
         }
     },
     "npc": {
+      "home": "",
+      "creature_type": "",
       "harm": {
         "value": 0,
         "min": 0,

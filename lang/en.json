@@ -111,5 +111,11 @@
   "kult4e.Settings.RotationSpeed": "Rotation Speed",
   "kult4e.Settings.RotationSpeedHint": "Set the pause icon rotation speed.",
   "kult4e.Settings.Debug": "Enable Debug",
-  "kult4e.Settings.DebugHint": "Enable debug to see some info logs with the prefix 'Kult4e' in the console"
+  "kult4e.Settings.DebugHint": "Enable debug to see some info logs with the prefix 'Kult4e' in the console",
+  "kult4e.Abilities": "Abilities",
+  "kult4e.Attacks": "Ataques",
+  "kult4e.NPC": {
+    "Home": "Home",
+    "Type": "Creature Type"
+  }
 }

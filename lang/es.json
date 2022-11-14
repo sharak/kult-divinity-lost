@@ -91,7 +91,7 @@
   "kult4e.KeepItTogether": "Mantener la calma",
   "kult4e.SeeThroughTheIllusion": "Ver más allá de la Ilusión",
   "kult4e.EndureInjury": "Soportar las heridas",
-  "kult4e.HarmTaken": "Daño recibido",
+  "kult4e.HarmTaken": "Heridas",
   "kult4e.Combat": "Combate",
   "kult4e.Influence": "Influencia",
   "kult4e.Magic": "Magia",
@@ -111,5 +111,11 @@
   "kult4e.Settings.RotationSpeed": "Velocidad de rotación",
   "kult4e.Settings.RotationSpeedHint": "Define la velocidad de rotación del icono de pausa.",
   "kult4e.Settings.Debug": "Habilitar depuración",
-  "kult4e.Settings.DebugHint": "Habilita la depuración para ver algunos mensajes de información en la consola, con el prefijo 'Kult4e'"
+  "kult4e.Settings.DebugHint": "Habilita la depuración para ver algunos mensajes de información en la consola, con el prefijo 'Kult4e'",
+  "kult4e.Abilities": "Habilidades",
+  "kult4e.Attacks": "Ataques",
+  "kult4e.NPC": {
+    "Home": "Hogar",
+    "Type": "Tipo de criatura"
+  }
 }

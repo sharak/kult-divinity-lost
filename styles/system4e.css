@@ -925,3 +925,13 @@ a.entity-link>i,
 a.inline-roll>i {
   color: #968c6a;
 }
+
+input.border-rect {
+  border-radius: 0;
+}
+
+.npc-moves {
+  width: 100%;
+  display: flex;
+  gap: .5rem;
+}

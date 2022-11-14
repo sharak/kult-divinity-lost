@@ -39,7 +39,7 @@
   "kult4e.Eyes": "Olhos",
   "kult4e.Hair": "Cabelo",
   "kult4e.Stats": "Estatísticas",
-  "kult4e.Background": "Background",  
+  "kult4e.Background": "Background",
   "kult4e.Appearance": "Aparência",
   "kult4e.Stabilized": "Estabilizado",
   "kult4e.NotStabilized": "Não Estabilizado",
@@ -54,7 +54,7 @@
   "kult4e.StabilityUnhinged": "Conturbado (-2 Manter o Sangue-frio | -3 para Desvantagens | +1 Ver Através da Ilusão)",
   "kult4e.StabilityBroken": "Arruinado (O Mestre faz um Movimento)",
   "kult4e.MinusStability": "Clique para diminuir a Estabilidade",
-  "kult4e.PlusStability": "Clique para aumentar a Estabilidade",  
+  "kult4e.PlusStability": "Clique para aumentar a Estabilidade",
   "kult4e.RollMove": "Clique para rolar o Movimento",
   "kult4e.DeleteItem": "Remover Item",
   "kult4e.EditItem": "Editar Item",
@@ -84,7 +84,7 @@
   "kult4e.Strength": "Força",
   "kult4e.Range": "Alcance",
   "kult4e.Special": "Especial",
-  "kult4e.Trigger": "Gatilho",  
+  "kult4e.Trigger": "Gatilho",
   "kult4e.SpecialMove": "Movimento Especial",
   "kult4e.KeepItTogether": "Manter o Sangue-frio",
   "kult4e.SeeThroughTheIllusion": "Ver Através da Ilusão",
@@ -101,7 +101,7 @@
   "kult4e.PassiveAbility": "Esta habilidade é passiva",
 
   "kult4e.Settings.Paused": "Jogo Pausado",
-  "kult4e.Settings.PauseIcon": "Ícone de Pausa",  
+  "kult4e.Settings.PauseIcon": "Ícone de Pausa",
   "kult4e.Settings.PauseIconHint": "Selecione uma imagem para substituir o ícone de pausa",
   "kult4e.Settings.Opacity": "Opacidade",
   "kult4e.Settings.OpacityHint": "Define a opacidade do ícone de pausa.",
@@ -110,5 +110,6 @@
   "kult4e.Settings.RotationSpeed": "Velocidade de Rotação",
   "kult4e.Settings.RotationSpeedHint": "Define a velocidade de rotação do icone de pausa.",
   "kult4e.Settings.Debug": "Habilitar Depuração",
-  "kult4e.Settings.DebugHint": "Habilite a depuração para ver alguns logs de informações com o prefixo 'Kult4e' no console"
+  "kult4e.Settings.DebugHint": "Habilite a depuração para ver alguns logs de informações com o prefixo 'Kult4e' no console",
+  "kult4e.Abilities": "Abilities"
 }
